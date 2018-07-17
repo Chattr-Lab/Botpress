@@ -1,0 +1,288 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.is('forget')",
+        "node": "forget-my-name"
+      }
+    ]
+  },
+  "startNode": "ask_name",
+  "nodes": [
+    {
+      "id": "bda0320009",
+      "name": "ask_question",
+      "onEnter": [
+        "getUserVariable {\"name\":\"name\",\"output\":\"$r\"}",
+        "say #!builtin_text-WTzfuA",
+        "setConversationVariable {\"name\":\"good\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}"
+      ],
+      "onReceive": [
+        "getConversationVariable {\"name\":\"good\",\"output\":\"$r\"}"
+      ],
+      "next": [
+        {
+          "condition": "event.nlu.intent.is(\"feeling_bad\")",
+          "node": "feeling_sad"
+        },
+        {
+          "condition": "true",
+          "node": "feeling_good"
+        }
+      ]
+    },
+    {
+      "id": "7099199f90",
+      "name": "feeling_sad",
+      "next": [
+        {
+          "condition": "true",
+          "node": "follow-up_question"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-AY5SSW"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "a54a82eb7c",
+      "name": "ask_name",
+      "onEnter": [
+        "setUserVariable {\"name\":\"name\",\"value\":\" {{event.text}}\",\"expiry\":\"never\"}",
+        "say #!builtin_text-FYFAMT",
+        "say #!builtin_text-cDHEZc"
+      ],
+      "onReceive": [],
+      "next": [
+        {
+          "condition": "always",
+          "node": "ask_question"
+        }
+      ]
+    },
+    {
+      "id": "13e901f828",
+      "name": "follow-up_question",
+      "next": [
+        {
+          "condition": "true",
+          "node": "follow_up_question2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-a_nMBr",
+        "say #!builtin_image-SVVHVe"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d6e128d70b",
+      "name": "follow_up_question3",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is(\"Yes\")",
+          "node": "follow_up_question4"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no\")",
+          "node": "follow_up_question4"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no_answer\")",
+          "node": "follow_up_question4"
+        },
+        {
+          "condition": "true",
+          "node": "new.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-XKdX3j",
+        "say #!builtin_single-choice-gZQE_T"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "3021ec4a9a",
+      "name": "follow_up_question2",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is(\"yes\")",
+          "node": "follow_up_question3"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"feeling_okay\")",
+          "node": "feeling_okay"
+        },
+        {
+          "condition": "true",
+          "node": "feeling_okay"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-2Ribb6"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "37fed22271",
+      "name": "follow_up_question4",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is(\"yes\")",
+          "node": "follow_up_question5"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no\")",
+          "node": "follow_up_question5"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no_answer\")",
+          "node": "follow_up_question5"
+        },
+        {
+          "condition": "true",
+          "node": "new.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_single-choice-lqmJzB"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "6ca43a16cc",
+      "name": "follow_up_question5",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is(\"yes\")",
+          "node": "follow_up_question6"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no\")",
+          "node": "follow_up_question6"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no_answer\")",
+          "node": "follow_up_question6"
+        },
+        {
+          "condition": "true",
+          "node": "new.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_single-choice-pabvz3"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "ced68d4b74",
+      "name": "follow_up_question6",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is(\"yes\")",
+          "node": "follow_up_question7"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no\")",
+          "node": "follow_up_question7"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no_answer\")",
+          "node": "follow_up_question7"
+        },
+        {
+          "condition": "true",
+          "node": "new.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_single-choice-J4BUov"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "74c5359d0a",
+      "name": "follow_up_question7",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is(\"period\")",
+          "node": "follow_up_question8"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no\")",
+          "node": "follow_up_question8"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no_answer\")",
+          "node": "follow_up_question8"
+        },
+        {
+          "condition": "true",
+          "node": "new.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_single-choice-3Jbj4r"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "494e12fa06",
+      "name": "feeling_good",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-ltYb3h"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "2893a851c3",
+      "name": "follow_up_question8",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is(\"yes\")",
+          "node": "solution"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no\")",
+          "node": "solution"
+        },
+        {
+          "condition": "event.nlu.intent.is(\"no_answer\")",
+          "node": "solution"
+        },
+        {
+          "condition": "true",
+          "node": "new.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_single-choice-SQcQqj"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "0a9e674320",
+      "name": "solution",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-CQcNAi"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "dc3b4d1913",
+      "name": "feeling_okay",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-ltYb3h"
+      ],
+      "onReceive": null
+    }
+  ]
+}

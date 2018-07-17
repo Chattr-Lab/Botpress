@@ -1,0 +1,34 @@
+{
+  "version": "0.1",
+  "catchAll": {},
+  "startNode": "continue_talking-copy",
+  "nodes": [
+    {
+      "id": "be233b23d0",
+      "name": "continue_talking-copy",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is(\"yes\")",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "goodbye-copy"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-l2yjsG"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "49fd22c28b",
+      "name": "goodbye-copy",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-8IHtHX"
+      ],
+      "onReceive": null
+    }
+  ]
+}

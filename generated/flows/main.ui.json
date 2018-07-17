@@ -1,0 +1,494 @@
+{
+  "nodes": [
+    {
+      "id": "bda0320009",
+      "position": {
+        "x": 130,
+        "y": -280
+      }
+    },
+    {
+      "id": "7099199f90",
+      "position": {
+        "x": 375,
+        "y": -285
+      }
+    },
+    {
+      "id": "a54a82eb7c",
+      "position": {
+        "x": -130,
+        "y": -275
+      }
+    },
+    {
+      "id": "13e901f828",
+      "position": {
+        "x": 645,
+        "y": -280
+      }
+    },
+    {
+      "id": "d6e128d70b",
+      "position": {
+        "x": 990,
+        "y": -90
+      }
+    },
+    {
+      "id": "3021ec4a9a",
+      "position": {
+        "x": 950,
+        "y": -275
+      }
+    },
+    {
+      "id": "37fed22271",
+      "position": {
+        "x": 1035,
+        "y": 240
+      }
+    },
+    {
+      "id": "6ca43a16cc",
+      "position": {
+        "x": 800,
+        "y": 175
+      }
+    },
+    {
+      "id": "ced68d4b74",
+      "position": {
+        "x": 550,
+        "y": 195
+      }
+    },
+    {
+      "id": "74c5359d0a",
+      "position": {
+        "x": 285,
+        "y": 165
+      }
+    },
+    {
+      "id": "494e12fa06",
+      "position": {
+        "x": 425,
+        "y": -20
+      }
+    },
+    {
+      "id": "2893a851c3",
+      "position": {
+        "x": 40,
+        "y": 120
+      }
+    },
+    {
+      "id": "0a9e674320",
+      "position": {
+        "x": -145,
+        "y": -5
+      }
+    },
+    {
+      "id": "dc3b4d1913",
+      "position": {
+        "x": 680,
+        "y": -70
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "bda0320009",
+      "sourcePort": "out0",
+      "target": "7099199f90",
+      "points": [
+        {
+          "x": 337,
+          "y": -92
+        },
+        {
+          "x": 475,
+          "y": -291
+        }
+      ]
+    },
+    {
+      "source": "bda0320009",
+      "sourcePort": "out1",
+      "target": "494e12fa06",
+      "points": [
+        {
+          "x": 337,
+          "y": -67
+        },
+        {
+          "x": 525,
+          "y": -26
+        }
+      ]
+    },
+    {
+      "source": "7099199f90",
+      "sourcePort": "out0",
+      "target": "13e901f828",
+      "points": [
+        {
+          "x": 582,
+          "y": -189
+        },
+        {
+          "x": 745,
+          "y": -286
+        }
+      ]
+    },
+    {
+      "source": "a54a82eb7c",
+      "sourcePort": "out0",
+      "target": "bda0320009",
+      "points": [
+        {
+          "x": 77,
+          "y": -129
+        },
+        {
+          "x": 230,
+          "y": -286
+        }
+      ]
+    },
+    {
+      "source": "13e901f828",
+      "sourcePort": "out0",
+      "target": "3021ec4a9a",
+      "points": [
+        {
+          "x": 852,
+          "y": -123
+        },
+        {
+          "x": 1050,
+          "y": -281
+        }
+      ]
+    },
+    {
+      "source": "d6e128d70b",
+      "sourcePort": "out0",
+      "target": "37fed22271",
+      "points": [
+        {
+          "x": 1197,
+          "y": 49
+        },
+        {
+          "x": 1135,
+          "y": 234
+        }
+      ]
+    },
+    {
+      "source": "d6e128d70b",
+      "sourcePort": "out1",
+      "target": "37fed22271",
+      "points": [
+        {
+          "x": 1197,
+          "y": 74
+        },
+        {
+          "x": 1135,
+          "y": 234
+        }
+      ]
+    },
+    {
+      "source": "d6e128d70b",
+      "sourcePort": "out2",
+      "target": "37fed22271",
+      "points": [
+        {
+          "x": 1197,
+          "y": 99
+        },
+        {
+          "x": 1135,
+          "y": 234
+        }
+      ]
+    },
+    {
+      "source": "3021ec4a9a",
+      "sourcePort": "out0",
+      "target": "d6e128d70b",
+      "points": [
+        {
+          "x": 1157,
+          "y": -197
+        },
+        {
+          "x": 1090,
+          "y": -96
+        }
+      ]
+    },
+    {
+      "source": "3021ec4a9a",
+      "sourcePort": "out2",
+      "target": "dc3b4d1913",
+      "points": [
+        {
+          "x": 1157,
+          "y": -147
+        },
+        {
+          "x": 780,
+          "y": -76
+        }
+      ]
+    },
+    {
+      "source": "37fed22271",
+      "sourcePort": "out0",
+      "target": "6ca43a16cc",
+      "points": [
+        {
+          "x": 1242,
+          "y": 354
+        },
+        {
+          "x": 900,
+          "y": 169
+        }
+      ]
+    },
+    {
+      "source": "37fed22271",
+      "sourcePort": "out1",
+      "target": "6ca43a16cc",
+      "points": [
+        {
+          "x": 1242,
+          "y": 379
+        },
+        {
+          "x": 900,
+          "y": 169
+        }
+      ]
+    },
+    {
+      "source": "37fed22271",
+      "sourcePort": "out2",
+      "target": "6ca43a16cc",
+      "points": [
+        {
+          "x": 1242,
+          "y": 404
+        },
+        {
+          "x": 900,
+          "y": 169
+        }
+      ]
+    },
+    {
+      "source": "6ca43a16cc",
+      "sourcePort": "out0",
+      "target": "ced68d4b74",
+      "points": [
+        {
+          "x": 1007,
+          "y": 271
+        },
+        {
+          "x": 650,
+          "y": 189
+        }
+      ]
+    },
+    {
+      "source": "6ca43a16cc",
+      "sourcePort": "out1",
+      "target": "ced68d4b74",
+      "points": [
+        {
+          "x": 1007,
+          "y": 296
+        },
+        {
+          "x": 650,
+          "y": 189
+        }
+      ]
+    },
+    {
+      "source": "6ca43a16cc",
+      "sourcePort": "out2",
+      "target": "ced68d4b74",
+      "points": [
+        {
+          "x": 1007,
+          "y": 321
+        },
+        {
+          "x": 650,
+          "y": 189
+        }
+      ]
+    },
+    {
+      "source": "ced68d4b74",
+      "sourcePort": "out0",
+      "target": "74c5359d0a",
+      "points": [
+        {
+          "x": 757,
+          "y": 291
+        },
+        {
+          "x": 385,
+          "y": 159
+        }
+      ]
+    },
+    {
+      "source": "ced68d4b74",
+      "sourcePort": "out1",
+      "target": "74c5359d0a",
+      "points": [
+        {
+          "x": 757,
+          "y": 316
+        },
+        {
+          "x": 385,
+          "y": 159
+        }
+      ]
+    },
+    {
+      "source": "ced68d4b74",
+      "sourcePort": "out2",
+      "target": "74c5359d0a",
+      "points": [
+        {
+          "x": 757,
+          "y": 341
+        },
+        {
+          "x": 385,
+          "y": 159
+        }
+      ]
+    },
+    {
+      "source": "74c5359d0a",
+      "sourcePort": "out0",
+      "target": "2893a851c3",
+      "points": [
+        {
+          "x": 492,
+          "y": 243
+        },
+        {
+          "x": 140,
+          "y": 114
+        }
+      ]
+    },
+    {
+      "source": "74c5359d0a",
+      "sourcePort": "out1",
+      "target": "2893a851c3",
+      "points": [
+        {
+          "x": 492,
+          "y": 268
+        },
+        {
+          "x": 140,
+          "y": 114
+        }
+      ]
+    },
+    {
+      "source": "74c5359d0a",
+      "sourcePort": "out2",
+      "target": "2893a851c3",
+      "points": [
+        {
+          "x": 492,
+          "y": 293
+        },
+        {
+          "x": 140,
+          "y": 114
+        }
+      ]
+    },
+    {
+      "source": "2893a851c3",
+      "sourcePort": "out0",
+      "target": "0a9e674320",
+      "points": [
+        {
+          "x": 247,
+          "y": 234
+        },
+        {
+          "x": -45,
+          "y": -11
+        }
+      ]
+    },
+    {
+      "source": "2893a851c3",
+      "sourcePort": "out1",
+      "target": "0a9e674320",
+      "points": [
+        {
+          "x": 247,
+          "y": 259
+        },
+        {
+          "x": -45,
+          "y": -11
+        }
+      ]
+    },
+    {
+      "source": "2893a851c3",
+      "sourcePort": "out2",
+      "target": "0a9e674320",
+      "points": [
+        {
+          "x": 247,
+          "y": 284
+        },
+        {
+          "x": -45,
+          "y": -11
+        }
+      ]
+    },
+    {
+      "source": "3021ec4a9a",
+      "sourcePort": "out1",
+      "target": "dc3b4d1913",
+      "points": [
+        {
+          "x": 1157,
+          "y": -172
+        },
+        {
+          "x": 780,
+          "y": -76
+        }
+      ]
+    }
+  ]
+}

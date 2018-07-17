@@ -1,0 +1,21 @@
+[
+  {
+    "id": "builtin_action-button-V5iFRb",
+    "formData": {
+      "title": "How about reading an inspirational or motivational or just a happy article?",
+      "action": "Open URL",
+      "url": "http://quoteshunter.com/quotes-to-make-you-smile/"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-07-13T18:51:35.068Z"
+  },
+  {
+    "id": "builtin_action-button-HjkC8d",
+    "formData": {
+      "title": "I would say talk to your parents or a close friend right now. They can help you, trust me!",
+      "action": "Say something"
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-07-17T17:44:07.370Z"
+  }
+]
