@@ -16,12 +16,9 @@
       "name": "ask_question",
       "onEnter": [
         "getUserVariable {\"name\":\"name\",\"output\":\"$r\"}",
-        "say #!builtin_text-WTzfuA",
-        "setConversationVariable {\"name\":\"good\",\"value\":\"{{event.text}}\",\"expiry\":\"never\"}"
+        "say #!builtin_text-WTzfuA"
       ],
-      "onReceive": [
-        "getConversationVariable {\"name\":\"good\",\"output\":\"$r\"}"
-      ],
+      "onReceive": [],
       "next": [
         {
           "condition": "event.nlu.intent.is(\"feeling_bad\")",
